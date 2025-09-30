@@ -4,11 +4,10 @@ public class Student {
 
     private String id;
     private String name;
-    private House house = new House();
+    private House house;
     private int age;
 
-
-    public Student(int age, House house, String name) {
+    public Student(String name, int age, House house) {
         this.age = age;
         this.house = house;
         this.name = name;

@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Course {
 
     private String name;
-    private Teacher teacher = new Teacher();
-    private ArrayList<String> students = new ArrayList<String>();
+    private Teacher teacher;
+    private ArrayList<Student> students = new ArrayList<>();
 
 
     public Course(String name, Teacher teacher) {
@@ -30,19 +30,18 @@ public class Course {
         this.teacher = teacher;
     }
 
-    public ArrayList<String> getStudents() {
+    public ArrayList<Student> getStudents() {
         return students;
 
     }
 
-    public void addStudent(String name) {
-        students.add(name);
-
+    public void addStudent(Student student) {
+        students.add(student);
 
     }
 
-    public void removeStudent(String name) {
-        students.remove(name);
+    public void removeStudent(Student student) {
+        students.remove(student);
 
 
     }
